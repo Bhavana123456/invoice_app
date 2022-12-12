@@ -1,26 +1,132 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+  padding:0;
+  margin:0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #7c5dfa;
+  --secondary-color: #ffffff;
+  --body-bg: rgb(255, 255, 255);
+  --paid-status-bg: #1f2c3f;
+  --paid-status-color: #32cf9b;
+  --pending-status-bg: rgba(255, 145, 0, 0.799);
+  --pending-status-color: #0b0b0a;
+  --small-text-color: #888eb0;
+  --draft-bg: #252945;
+  --delete-btn-bg: #ec5757;
+  --edit-btn-bg: #252945;
+}
+body {
+  background: var(--body-bg);
+}
+h1,h2,h3,h4,h5,h6{
+  color:black
+}
+.sidebar {
+  width: 120px;
+  height: 100vh;
+  background: var(--secondary-color) !important;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 50px 50px rgb(54, 54, 54);
+}
+.sidebar__container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:100%;
+  height:100%;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.sidebar__heading{
+  width: 100%;
+  height:100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0px;
+  background: var(--primary-color);
+}
+a{
+  text-decoration: none;
+  color:var(--small-text-color);
+}
+.btn{
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+p{
+  font-size: 0.8rem;
+  color:var(--small-text-color);
+}
+
+.main__container{
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: calc(100% - 23%);
+  padding: 30px 0px;
+}
+.invoice__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.invoice__header-logo h3 {
+  color: rgb(0, 0, 0);
+}
+.invoice__item{
+  display:flex;
+  align-items :center;
+  justify-content: space-between;
+  padding:30px;
+  background: #ddd6f7;
+  border-radius: 0.5rem;
+  margin-bottom:1.9rem;
+  transition:1s;
+  color:black
+}
+.invoice__item:hover{
+  border:1px solid var(--primary-color);
+  transform: scaleY(1);
+}
+.pending__status,
+.paid__status,
+.draft__status,
+.edit__btn,
+.delete__btn,
+.mark__as-btn,
+.draft__btn {
+  padding: 10px 25px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.paid__status {
+  background: var(--paid-status-bg);
+  color: var(--paid-status-color);
+}
+
+.pending__status {
+  background: var(--pending-status-bg);
+  color: var(--pending-status-color);
+}
+
+.invoice__container {
+  padding-bottom: 200px !important;
 }
