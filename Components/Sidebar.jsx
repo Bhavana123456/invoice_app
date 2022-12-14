@@ -6,7 +6,7 @@ function Sidebar() {
         <div className="sidebar__container">
             <div className="sidebar__heading">
                 <div className="sidebar__logo">
-                    <h2>Invoicer</h2>
+                    <h2 className='sidebar__header'>Invoicer</h2>
                 </div>
             </div>
         </div>
