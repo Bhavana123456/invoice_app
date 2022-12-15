@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import {useRouter} from 'next/router'
 import { MongoClient,ObjectId } from 'mongodb';
+import { toast } from "react-toastify";
+
 
 function Edit(props) {
     const invoice =  props.data
@@ -113,7 +115,7 @@ function Edit(props) {
                         <p>Lane</p>
                         <input type="text" name="" id="" />
                     </div>
-                    <div className="form__group inline__form-group">
+                    <div className="form__group inline__form-group space">
                         <div>
                             <p>City</p>
                             <input type = 'text' />
@@ -149,7 +151,7 @@ function Edit(props) {
                         <input type="text" name="" id="" />
                     </div>
 
-                    <div className="form__group inline__form-group">
+                    <div className="form__group inline__form-group space">
                         <div>
                             <p>City</p>
                             <input type = 'text' />

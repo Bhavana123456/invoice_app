@@ -251,6 +251,7 @@ p{
 }
 .form__group{
   margin-bottom: 2rem;
+ 
 }
 .form__group p{
   margin-bottom: 10px;
@@ -259,9 +260,14 @@ p{
 .inline__form-group{
   display: flex;
   justify-content: space-between; 
+  
 }
 .inline__group{
-  width: 45%;
+  width: 40%;
+  
+}
+.space{
+  gap:1.5rem
 }
 .new__invoice-body{
   padding-bottom: 40px;

@@ -57,7 +57,7 @@ function InvoiceDetails(props) {
           >{data.status}</button>
       </div>
       <div className='details__btns'>
-          {/* <button className='edit__btn' onClick={()=>router.push(`/edit/${data.id}`)}>Edit</button> */}
+          <button className='edit__btn' onClick={()=>router.push(`/edit/${data.id}`)}>Edit</button>
 
           <button className='delete__btn' onClick={()=>deleteInvoice(data.id)}>Delete</button>
 

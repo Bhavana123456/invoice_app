@@ -94,7 +94,7 @@ function AddNew() {
                         <p>Lane</p>
                         <input type="text" name="firstname" id="" ref={senderStreet}/>
                     </div>
-                    <div className="form__group inline__form-group">
+                    <div className="form__group inline__form-group space">
                         <div>
                             <p>City</p>
                             <input type = 'text'ref={senderCity}/>
@@ -130,7 +130,7 @@ function AddNew() {
                         <input type="text" name="" id="" ref={clientStreet}/>
                     </div>
 
-                    <div className="form__group inline__form-group">
+                    <div className="form__group inline__form-group space">
                         <div>
                             <p>City</p>
                             <input type = 'text' ref={clientCity}/>
