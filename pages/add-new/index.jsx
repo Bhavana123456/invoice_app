@@ -171,7 +171,7 @@ function AddNew() {
                     <h3>List</h3>
                   {items?.map((item,i)=>(
                       <div className="item" key={i}>
-                      <div className="form__group inline__form-group">
+                      <div className="form__group inline__form-group space">
                           <div>
                               <p>Item Name</p>
                               <input type="text" name="name" id="" onChange={(e)=>handler(e , i)}/>
